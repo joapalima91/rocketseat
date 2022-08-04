@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- codificação para caracteres especiais -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- portabilidade para dispositivos mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Complexa</title>
 </head>
@@ -13,34 +16,34 @@
         <!--agrupa as colunas-->
         <colgroup>
             <col>
-            <col span="2" style="background-color: red;">
-            <col span="2" style="background-color: blue;">
+            <col span="2" style="background-color: lightcoral;">
+            <col span="2" style="background-color: lightblue;">
         </colgroup>
 
         <thead>
             <tr>
                 <th rowspan="2"></th>
-                <th colspan="2">Macaé</th>
-                <th colspan="2">BSJ</th>
+                <th colspan="2" scope="colgroup">Macaé</th>
+                <th colspan="2" scope="colgroup">BSJ</th>
             </tr>
 
             <tr>
-                <th>Produzidos</th>
-                <th>Vendidos</th>
-                <th>Produzidos</th>
-                <th>Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th>Vassoura</th>
+                <th scope="row">Vassoura</th>
                 <td>50</td>
                 <td>30</td>
                 <td>20</td>
                 <td>20</td>
             </tr>
             <tr>
-                <th>Baldes</th>
+                <th scope="row">Baldes</th>
                 <td>10</td>
                 <td>10</td>
                 <td>30</td>
